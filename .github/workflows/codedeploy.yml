@@ -44,7 +44,7 @@ jobs:
     - name: Build Deployment Artifact
       run: |
         mkdir codedeploy_artifact
-        zip -r ${{ env.ARTIFACT_NAME }} avsapp/target/avs-0.0.1-SNAPSHOT.jar avsapp/codedeploy/*.sh avsapp/appspec.yml
+        zip -r ${{ env.ARTIFACT_NAME }} avsapp/target/avs-0.0.1-SNAPSHOT.jar avsapp/codedeploy/*.sh appspec.yml
         ls -al
         mv ${{ env.ARTIFACT_NAME }} codedeploy_artifact/
         ls -al
