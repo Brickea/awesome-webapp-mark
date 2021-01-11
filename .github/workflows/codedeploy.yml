@@ -5,9 +5,9 @@ name: Build & Deploy avsapp
 
 
 env:
-  ARTIFACT_NAME: avs-${{ github.sha }}.zip
-  CODEDEPLOY_APPLICATION_NAME: avs-codedeploy
-  CODEDEPLOY_APPLICATION_DEPLOYMENT_GROUP_NAME: avs-deployment
+  ARTIFACT_NAME: Mark-${{ github.sha }}.zip
+  CODEDEPLOY_APPLICATION_NAME: Mark-codedeploy
+  CODEDEPLOY_APPLICATION_DEPLOYMENT_GROUP_NAME: Mark-deployment
   AWS_REGION: us-east-1
 
 on: 
